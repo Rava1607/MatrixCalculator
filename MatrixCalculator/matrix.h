@@ -30,6 +30,8 @@ class Matrix
         void setLine(int line);
         int getColumn();
         void setColumn(int column);
+        double getMultiple();
+        void setMultiple(double multiple);
         QVector<QVector<double> > getcoef();
         double getCoef(int line, int column);
         void setCoefficients(QVector<QVector<double> > coefficients);
@@ -38,6 +40,7 @@ class Matrix
     private:
         int line;
         int column;
+        int multiple;
         QVector<QVector<double> > coefficients;
 
 };
